@@ -1,0 +1,192 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif,;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  /* nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+  } */
+  
+  /* nav ul li {
+    display: inline;
+  } */
+  
+  /* nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  } */
+  
+  /* nav ul li a:hover {
+    text-decoration: underline;
+  } */
+  
+  /* Main Content Styles */
+  .upload-section {
+    background-color: #dddddd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+  }
+  
+  .upload-section h2 {
+    margin-top: 5px;
+  }
+ 
+  
+  .files-section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .files-section a p{
+    margin: auto;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .file-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .file-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .file-list a {
+    text-decoration: none;
+    color: inherit;
+  }
+ 
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+
+  .round-image {
+    width: 150px; /* Set the width of the image */
+    height: 150px; /* Set the height of the image */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border: 3px solid rgb(255, 0, 212);
+    
+  }
+
+  .link-hover:hover{
+    box-shadow: 10px 10px 10px rgba(0.1, 0.1, 0.1, 0.1);
+    border: 2px solid gray;
+    border-radius: 8px;
+  }
+
+  @media only screen and (max-width: 450px) {
+    .upload-section {
+        padding: 8px;
+    }
+    .round-image {
+        width: 65px;
+        height: 65px;
+    }
+    .upload-section h2 {
+        font-size: 16px;
+    }
+    .upload-section .subheading {
+        font-size: 12px;
+    }
+}
+
+  @media only screen and (max-width: 768px) {
+    .upload-section {
+        padding: 10px;
+    }
+    .round-image {
+        width: 80px;
+        height: 80px;
+    }
+    .upload-section h2 {
+        font-size: 18px;
+    }
+    .upload-section .subheading {
+        font-size: 14px;
+    }
+}
+
+/* For medium screens (tablets) */
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+    .upload-section {
+        padding: 15px;
+    }
+    .round-image {
+        width: 90px;
+        height: 90px;
+    }
+    .upload-section h2 {
+        font-size: 20px;
+    }
+    .upload-section .subheading {
+        font-size: 16px;
+    }
+}
+
+/* For large screens (desktop devices) */
+@media only screen and (min-width: 993px) {
+    .upload-section {
+        padding: 20px;
+    }
+    .round-image {
+        width: 100px;
+        height: 100px;
+    }
+    .upload-section h2 {
+        font-size: 24px;
+    }
+    .upload-section .subheading {
+        font-size: 18px;
+    }
+}
